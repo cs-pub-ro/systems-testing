@@ -1,0 +1,32 @@
+name: Generate Doxygen Documentation
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger pentru orice tag care începe cu 'v' (ex: v1.0.0)
+
+jobs:
+  doxygen:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Doxygen
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y doxygen
+
+    - name: Generate Documentation
+      run: |
+        # Creează directorul de ieșire pentru documentație
+        mkdir -p docs/output
+        # Rulează doxygen cu fișierul Doxyfile existent
+        doxygen Doxyfile
+
+    - name: Upload documentation as an artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: doxygen-docs
+        path: docs/output
