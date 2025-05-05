@@ -17,6 +17,7 @@ print()
 tree._printPostorderTree(tree.root)
 print()
 tree._printPreorderTree(tree.root)
+print("Test")
 
     
 
