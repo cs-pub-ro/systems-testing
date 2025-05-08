@@ -20,4 +20,5 @@ jobs:
 
     - name: Run unit tests
       run: |
+        cd laboratories/cicd-documentation
         python -m unittest tree.py
