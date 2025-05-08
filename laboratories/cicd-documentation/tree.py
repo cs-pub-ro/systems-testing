@@ -54,6 +54,16 @@ class Tree:
             return None
 
     def _find(self, data, node):
+        """Recursive helper method to find data in the tree.
+
+        Args:
+            data (int): Data to find.
+            node (Node): Current node in the search.
+
+        Returns:
+            Node: The node containing the data, or None if the data is not found
+                  starting from this node.
+        """
         if data == node.data:
             return node
         elif (data < node.data and node.left is not None):
@@ -62,25 +72,43 @@ class Tree:
             return self._find(data, node.right)
 
     def deleteTree(self):
+        """Deletes all nodes in the tree, resetting the root to None."""
         self.root = None
 
     def printTree(self):
+        """Prints the tree data using inorder traversal."""
         if self.root is not None:
             self._printInorderTree(self.root)
 
     def _printInorderTree(self, node):
+        """Recursive helper method to print tree data using inorder traversal (Left, Root, Right).
+
+        Args:
+            node (Node): Current node in the traversal.
+        """
         if node is not None:
             self._printInorderTree(node.left)
             print(str(node.data) + ' ')
             self._printInorderTree(node.right)
 
     def _printPreorderTree(self, node):
+        """Recursive helper method to print tree data using preorder traversal (Root, Left, Right).
+
+        Args:
+            node (Node): Current node in the traversal.
+        """
+        
         if node is not None:
             print(str(node.data) + ' ')
             self._printPreorderTree(node.left)
             self._printPreorderTree(node.right)
 
     def _printPostorderTree(self, node):
+        """Recursive helper method to print tree data using postorder traversal (Left, Right, Root).
+
+        Args:
+            node (Node): Current node in the traversal.
+        """
         if node is not None:
             self._printPostorderTree(node.left)
             self._printPostorderTree(node.right)

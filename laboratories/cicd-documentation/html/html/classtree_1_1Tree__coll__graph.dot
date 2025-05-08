@@ -1,0 +1,7 @@
+digraph "tree.Tree"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{tree.Tree\n|+ root\l|+ __init__()\l+ getRoot()\l+ add()\l+ find()\l+ deleteTree()\l+ printTree()\l- _add()\l- _find()\l- _printInorderTree()\l- _printPreorderTree()\l- _printPostorderTree()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}
