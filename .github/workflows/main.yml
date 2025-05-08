@@ -1,9 +1,8 @@
 name: Python Unit Tests
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
+    types: [opened]
     branches: [ main ]
 
 jobs:
@@ -20,4 +19,5 @@ jobs:
 
     - name: Run unit tests
       run: |
+        cd laboratories/cicd-documentation
         python -m unittest tree.py

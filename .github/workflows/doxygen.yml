@@ -1,0 +1,33 @@
+name: Generate Doxygen Documentation
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  generate_docs:
+    name: Generate and Upload Doxygen Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install Doxygen and Graphviz
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y doxygen graphviz
+
+    - name: Generate Doxygen documentation
+      run: |
+        cd laboratories/cicd-documentation
+        doxygen Doxyfile
+
+    - name: Upload Doxygen documentation artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: doxygen-html-docs-${{ github.ref_name }}
+        path: laboratories/cicd-documentation/html/
