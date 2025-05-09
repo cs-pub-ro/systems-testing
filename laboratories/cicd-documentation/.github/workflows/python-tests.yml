@@ -17,11 +17,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt || true
-          pip install unittest
+      - name: Install dependencies (none needed)
+        run: echo "No dependencies to install"
 
       - name: Run unit tests
-        run: |
-          python -m unittest discover
+        run: python -m unittest discover
+
