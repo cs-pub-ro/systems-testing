@@ -1,0 +1,175 @@
+\hypertarget{classtree_1_1Tree}{}\doxysection{tree.\+Tree Class Reference}
+\label{classtree_1_1Tree}\index{tree.Tree@{tree.Tree}}
+
+
+Collaboration diagram for tree.\+Tree\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_ae6766dbfd5f24b1beeb492ea86d48eda}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_aeafbc59fabeae3758a3298f167bdf5af}{get\+Root}} (self)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_ac86834d17766cabcf9932921e78f402b}{add}} (self, data)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_a1ab25ba4724a490f0e93c12801ab32d2}{find}} (self, data)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_a1537147bce0c8fba10d7512630325d25}{delete\+Tree}} (self)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_af94602a0b7744b7094c63bae887b89f9}{print\+Tree}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtree_1_1Tree_af113725032a5affae34a81564874dca5}{root}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_af619013c7e0ab26b6c5c6a46d3f1175e}{\+\_\+add}} (self, data, node)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_aadf09740b6226fdc48421616107c6adc}{\+\_\+find}} (self, data, node)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_a4470bd2ea35f1daa7d8364286bbf3831}{\+\_\+print\+Inorder\+Tree}} (self, node)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_a6fb480464f35eae4a8614f0aba21cb33}{\+\_\+print\+Preorder\+Tree}} (self, node)
+\item 
+def \mbox{\hyperlink{classtree_1_1Tree_a1165d6c1a170182c192f26b7eb6289a2}{\+\_\+print\+Postorder\+Tree}} (self, node)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Tree class for binary tree \end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtree_1_1Tree_ae6766dbfd5f24b1beeb492ea86d48eda}\label{classtree_1_1Tree_ae6766dbfd5f24b1beeb492ea86d48eda}} 
+\index{tree.Tree@{tree.Tree}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Constructor for Tree class \end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtree_1_1Tree_af619013c7e0ab26b6c5c6a46d3f1175e}\label{classtree_1_1Tree_af619013c7e0ab26b6c5c6a46d3f1175e}} 
+\index{tree.Tree@{tree.Tree}!\_add@{\_add}}
+\index{\_add@{\_add}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{\_add()}{\_add()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+\_\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Method for add data to the tree
+
+Args:
+    data (int): data to add
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_aadf09740b6226fdc48421616107c6adc}\label{classtree_1_1Tree_aadf09740b6226fdc48421616107c6adc}} 
+\index{tree.Tree@{tree.Tree}!\_find@{\_find}}
+\index{\_find@{\_find}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{\_find()}{\_find()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+\_\+find (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data,  }\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Recursive helper method to find data in the tree.
+
+Args:
+    data (int): Data to find.
+    node (Node): Current node in the search.
+
+Returns:
+    Node: The node containing the data, or None if the data is not found
+          starting from this node.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_a4470bd2ea35f1daa7d8364286bbf3831}\label{classtree_1_1Tree_a4470bd2ea35f1daa7d8364286bbf3831}} 
+\index{tree.Tree@{tree.Tree}!\_printInorderTree@{\_printInorderTree}}
+\index{\_printInorderTree@{\_printInorderTree}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{\_printInorderTree()}{\_printInorderTree()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+\_\+print\+Inorder\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Recursive helper method to print tree data using inorder traversal (Left, Root, Right).
+
+Args:
+    node (Node): Current node in the traversal.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_a1165d6c1a170182c192f26b7eb6289a2}\label{classtree_1_1Tree_a1165d6c1a170182c192f26b7eb6289a2}} 
+\index{tree.Tree@{tree.Tree}!\_printPostorderTree@{\_printPostorderTree}}
+\index{\_printPostorderTree@{\_printPostorderTree}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{\_printPostorderTree()}{\_printPostorderTree()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+\_\+print\+Postorder\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Recursive helper method to print tree data using postorder traversal (Left, Right, Root).
+
+Args:
+    node (Node): Current node in the traversal.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_a6fb480464f35eae4a8614f0aba21cb33}\label{classtree_1_1Tree_a6fb480464f35eae4a8614f0aba21cb33}} 
+\index{tree.Tree@{tree.Tree}!\_printPreorderTree@{\_printPreorderTree}}
+\index{\_printPreorderTree@{\_printPreorderTree}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{\_printPreorderTree()}{\_printPreorderTree()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+\_\+print\+Preorder\+Tree (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Recursive helper method to print tree data using preorder traversal (Root, Left, Right).
+
+Args:
+    node (Node): Current node in the traversal.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_ac86834d17766cabcf9932921e78f402b}\label{classtree_1_1Tree_ac86834d17766cabcf9932921e78f402b}} 
+\index{tree.Tree@{tree.Tree}!add@{add}}
+\index{add@{add}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Method for add data to the tree \end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_a1537147bce0c8fba10d7512630325d25}\label{classtree_1_1Tree_a1537147bce0c8fba10d7512630325d25}} 
+\index{tree.Tree@{tree.Tree}!deleteTree@{deleteTree}}
+\index{deleteTree@{deleteTree}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{deleteTree()}{deleteTree()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+delete\+Tree (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes all nodes in the tree, resetting the root to None.\end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_a1ab25ba4724a490f0e93c12801ab32d2}\label{classtree_1_1Tree_a1ab25ba4724a490f0e93c12801ab32d2}} 
+\index{tree.Tree@{tree.Tree}!find@{find}}
+\index{find@{find}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+find (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method for find data in the tree
+
+Args:
+    data (int): data to find
+
+Returns:
+    Node: node with data
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_aeafbc59fabeae3758a3298f167bdf5af}\label{classtree_1_1Tree_aeafbc59fabeae3758a3298f167bdf5af}} 
+\index{tree.Tree@{tree.Tree}!getRoot@{getRoot}}
+\index{getRoot@{getRoot}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{getRoot()}{getRoot()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+get\+Root (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Method for get root of the tree \end{DoxyVerb}
+ \mbox{\Hypertarget{classtree_1_1Tree_af94602a0b7744b7094c63bae887b89f9}\label{classtree_1_1Tree_af94602a0b7744b7094c63bae887b89f9}} 
+\index{tree.Tree@{tree.Tree}!printTree@{printTree}}
+\index{printTree@{printTree}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{printTree()}{printTree()}}
+{\footnotesize\ttfamily def tree.\+Tree.\+print\+Tree (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prints the tree data using inorder traversal.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtree_1_1Tree_af113725032a5affae34a81564874dca5}\label{classtree_1_1Tree_af113725032a5affae34a81564874dca5}} 
+\index{tree.Tree@{tree.Tree}!root@{root}}
+\index{root@{root}!tree.Tree@{tree.Tree}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily tree.\+Tree.\+root}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tree_8py}{tree.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,59 @@
+\hypertarget{classnode_1_1Node}{}\doxysection{node.\+Node Class Reference}
+\label{classnode_1_1Node}\index{node.Node@{node.Node}}
+
+
+Collaboration diagram for node.\+Node\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classnode_1_1Node_a49efb04d7d108b751064dbb8815f8f1b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classnode_1_1Node_aa357f0c11267a6352c53fe6af60fa06e}{data}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnode_1_1Node_aa1caf7104381c17c8eef64feecba8980}{left}}
+\item 
+\mbox{\hyperlink{classnode_1_1Node_a19b985553662bfd3d1eaa009d7bb6af3}{right}}
+\item 
+\mbox{\hyperlink{classnode_1_1Node_aa357f0c11267a6352c53fe6af60fa06e}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb} Node class for binary tree \end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnode_1_1Node_a49efb04d7d108b751064dbb8815f8f1b}\label{classnode_1_1Node_a49efb04d7d108b751064dbb8815f8f1b}} 
+\index{node.Node@{node.Node}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!node.Node@{node.Node}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def node.\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classnode_1_1Node_aa357f0c11267a6352c53fe6af60fa06e}\label{classnode_1_1Node_aa357f0c11267a6352c53fe6af60fa06e}} 
+\index{node.Node@{node.Node}!data@{data}}
+\index{data@{data}!node.Node@{node.Node}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily node.\+Node.\+data}
+
+\mbox{\Hypertarget{classnode_1_1Node_aa1caf7104381c17c8eef64feecba8980}\label{classnode_1_1Node_aa1caf7104381c17c8eef64feecba8980}} 
+\index{node.Node@{node.Node}!left@{left}}
+\index{left@{left}!node.Node@{node.Node}}
+\doxysubsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily node.\+Node.\+left}
+
+\mbox{\Hypertarget{classnode_1_1Node_a19b985553662bfd3d1eaa009d7bb6af3}\label{classnode_1_1Node_a19b985553662bfd3d1eaa009d7bb6af3}} 
+\index{node.Node@{node.Node}!right@{right}}
+\index{right@{right}!node.Node@{node.Node}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily node.\+Node.\+right}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node_8py}{node.\+py}}\end{DoxyCompactItemize}

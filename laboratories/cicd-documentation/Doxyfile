@@ -1,0 +1,36 @@
+# Numele proiectului
+PROJECT_NAME           = "Binary Tree Documentation"
+
+# Directorul unde va fi generată documentația
+OUTPUT_DIRECTORY       = html
+
+# Limbajul principal (deși Doxygen îl va detecta din extensiile fișierelor)
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA_OR_IDL = YES # Adesea util pentru stilul docstring-urilor Python
+
+# Activați suportul pentru docstring-uri Python
+PYTHON_DOCSTRING       = YES
+
+# Extrageți toate entitățile, chiar dacă nu sunt documentate explicit
+EXTRACT_ALL            = YES
+
+# Extrageți și membrii privați (cei care încep cu _)
+EXTRACT_PRIVATE        = YES
+
+# Extrageți și membrii statici
+EXTRACT_STATIC         = YES
+
+# Specificați fișierele sursă. '.' înseamnă directorul curent.
+INPUT                  = .
+
+# Tiparele de fișiere de inclus
+FILE_PATTERNS          = *.py
+
+# Căutați recursiv în subdirectoare (dacă este cazul, deși aici nu pare necesar)
+RECURSIVE              = NO # Sau YES dacă aveți surse în subdirectoare pe care doriți să le includeți
+
+# Folosiți dot pentru a genera grafice (necesită Graphviz instalat)
+HAVE_DOT               = YES
+DOT_PATH               = # Lăsați gol dacă 'dot' este în PATH, altfel specificați calea
+CLASS_DIAGRAMS         = YES
+UML_LOOK               = YES
